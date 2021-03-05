@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> Feli Game </title>
+	<link rel="stylesheet" href="game style.css">
+	<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<p class="title"> Balloon Popper </p>
+<p class="intro"> Click on a balloon to see what you'll get.
+<br> Be careful of the angry bees!</p>
+
+<canvas></canvas>
+
+<div class="cloud_container">
+	<div class="cloud"></div>
+	<div class="cloud"></div>
+	<div class="cloud"></div>
+	<div class="cloud"></div>
+	<div class="cloud"></div>
+</div>
+
+<div class="balloon_container" id="balloon_container">
+	<div class="balloon" id="balloon1" onclick="pop1()">
+		<div class="bottom"></div>
+		<div class="rope"></div>
+	</div>
+	<div class="balloon" id="balloon2" onclick="pop2()">
+		<div class="bottom"></div>
+		<div class="rope"></div>
+	</div>
+	<div class="balloon" id="balloon3" onclick="pop3()">
+		<div class="bottom"></div>
+		<div class="rope"></div>
+	</div>
+	<div class="balloon" id="balloon4" onclick="pop4()">
+		<div class="bottom"></div>
+		<div class="rope"></div>
+	</div>
+	<div class="balloon" id="balloon5" onclick="pop5()">
+		<div class="bottom"></div>
+		<div class="rope"></div>
+	</div>
+	
+	<img id="bee" src="angry bee.png">
+	<img id="ticket" src="ticket.png">
+</div>
+
+<script src="game1.js"></script>
+</body>
+</html>
